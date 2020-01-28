@@ -18,7 +18,7 @@ LABEL maintainer="Hunter Long (https://github.com/hunterlong)"
 ARG VERSION
 ENV IS_DOCKER=true
 ENV STATPING_DIR=/app
-ENV PORT=8080
+ENV PORT=8081
 RUN apk --no-cache add curl jq libsass
 
 COPY --from=base /usr/local/bin/sass /usr/local/bin/sass
